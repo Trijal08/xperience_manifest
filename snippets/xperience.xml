@@ -44,7 +44,8 @@
     <project path="external/gptfdisk" name="android_external_gptfdisk" remote="xpe" />
     <remove-project name="platform/external/e2fsprogs" />
     <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="xpe" />
-
+    <project path="external/json-c" name="external_json-c" remote="vos" />
+    <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
 
     <!-- Frameworks -->
     <remove-project name="platform/frameworks/av" />
