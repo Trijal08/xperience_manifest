@@ -33,7 +33,7 @@
     <remove-project name="platform/external/gptfdisk" />
     <project path="external/gptfdisk" name="android_external_gptfdisk" remote="xpe" />
     <remove-project name="platform/external/e2fsprogs" />
-    <project path="external/gptfdisk" name="android_external_e2fsprogs" remote="xpe" />
+    <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="xpe" />
 
 
     <!-- Frameworks -->
