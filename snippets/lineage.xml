@@ -16,9 +16,7 @@
     <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" revision="lineage-19.1" remote="LineageOS" />
     <project path="prebuilts/tools-lineage" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="LineageOS" />
 
-    <project path="external/ant-wireless/ant_client" name="LineageOS/external_ant-wireless_ant_client" remote="LineageOS" />
-    <project path="external/ant-wireless/ant_native" name="LineageOS/external_ant-wireless_ant_native" remote="LineageOS" />
-    <project path="external/ant-wireless/ant_service" name="LineageOS/external_ant-wireless_ant_service" remote="LineageOS" />
+    <!--External-->
     <project path="external/json-c" name="LineageOS/external_json-c" remote="LineageOS" />
     <project path="external/tinycompress" name="LineageOS/external_tinycompress" remote="LineageOS" />
 
