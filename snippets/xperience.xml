@@ -3,7 +3,7 @@
 
     <!--android-->
     <remove-project name="platform/art" />
-    <project path="art" name="TheXPerienceProject/android_art" groups="pdk" remote="github" />
+    <project path="art" name="TheXPerienceProject/android_art" groups="pdk" remote="github" revision="xpe-19.0"/>
     <remove-project name="platform/bionic" />
     <project path="bionic" name="android_bionic" groups="pdk" remote="xpe" />
 
@@ -34,6 +34,7 @@
     <project path="device/xperience/sepolicy" name="android_device_xperience_sepolicy" remote="xpe" revision="xpe-19.0" />
 
     <!-- External -->
+    <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="xpe" />
     <remove-project name="platform/external/dtc" />
     <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="xpe" />
     <remove-project name="platform/external/gptfdisk" />
@@ -59,11 +60,11 @@
     <remove-project name="platform/hardware/interfaces" />
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="xpe" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="xpe" />
-    <project path="hardware/xperience/compat" name="TheXPerienceProject/android_hardware_xperience_compat" remote="github" />
-    <project path="hardware/xperience/interfaces" name="TheXPerienceProject/android_hardware_xperience_interfaces" groups="pdk" remote="github" />
+    <project path="hardware/xperience/compat" name="TheXPerienceProject/android_hardware_xperience_compat" remote="github" revision="xpe-19.0" />
+    <project path="hardware/xperience/interfaces" name="TheXPerienceProject/android_hardware_xperience_interfaces" groups="pdk" remote="github" revision="xpe-19.0" />
 
     <!-- Hardware qcom-->
-    <project path="hardware/qcom-caf/common" name="TheXPerienceProject/android_hardware_qcom-caf_common" groups="qcom" remote="github" >
+    <project path="hardware/qcom-caf/common" name="TheXPerienceProject/android_hardware_qcom-caf_common" groups="qcom" remote="github" revision="xpe-19.0" >
         <!-- add guard for AOSP hardware/qcom dir -->
         <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
         <!-- add guards for CAF repositories -->
@@ -122,8 +123,8 @@
 
 
     <!-- Vendor -->
-    <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" />
-    <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" />
+    <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" revision="xpe-19.0" />
+    <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" revision="xpe-19.0" />
     <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" />
 
 </manifest>

@@ -19,7 +19,6 @@
     <project path="external/ant-wireless/ant_client" name="LineageOS/external_ant-wireless_ant_client" remote="LineageOS" />
     <project path="external/ant-wireless/ant_native" name="LineageOS/external_ant-wireless_ant_native" remote="LineageOS" />
     <project path="external/ant-wireless/ant_service" name="LineageOS/external_ant-wireless_ant_service" remote="LineageOS" />
-    <project path="external/ant-wireless/hidl" name="LineageOS/external_ant-wireless_hidl" remote="LineageOS" />
     <project path="external/json-c" name="LineageOS/external_json-c" remote="LineageOS" />
     <project path="external/tinycompress" name="LineageOS/external_tinycompress" remote="LineageOS" />
 
