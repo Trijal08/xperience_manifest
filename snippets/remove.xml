@@ -84,6 +84,9 @@
   <remove-project name="device/sample" />
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
 
+  <!-- External -->
+  <remove-project name="platform/external/tinycompress"/>
+
   <!-- Hardware -->
   <remove-project name="platform/hardware/interfaces"/>
   <remove-project name="platform/hardware/libhardware"/>
