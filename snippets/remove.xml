@@ -84,4 +84,12 @@
   <remove-project name="device/sample" />
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
 
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces"/>
+  <remove-project name="platform/hardware/libhardware"/>
+  <remove-project name="platform/hardware/qcom/wlan"/>
+
+  <!-- Kernel -->
+  <remove-project name="kernel/configs" />
+
 </manifest>

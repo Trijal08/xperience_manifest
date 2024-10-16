@@ -15,8 +15,12 @@
           fetch="https://bitbucket.org/thexperienceproject" />
 
   <remote name="xpe"
-          fetch="https://github.com/TheXPerienceProject/"
+          fetch="https://github.com/TheXPerienceProject-staging/"
           revision="refs/heads/xpe-19.0" />
+
+  <remote  name="vos"
+          revision="15"
+          fetch="https://github.com/VoltageOS-staging" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r1"/>
   <contactinfo bugurl="go/repo-bug" />
