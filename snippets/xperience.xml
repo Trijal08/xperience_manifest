@@ -52,6 +52,7 @@
     <!-- hardware -->
     <remove-project name="platform/hardware/interfaces" />
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="xpe" />
+    <project path="hardware/libhardware" name="android_hardware_libhardware" remote="xpe" />
     <project path="hardware/xperience/compat" name="TheXPerienceProject/android_hardware_xperience_compat" remote="github" />
     <project path="hardware/xperience/interfaces" name="TheXPerienceProject/android_hardware_xperience_interfaces" groups="pdk" remote="github" />
 
