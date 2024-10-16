@@ -129,6 +129,6 @@
     <!-- Vendor -->
     <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" revision="xpe-19.0" />
     <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" revision="xpe-19.0" />
-    <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" />
+    <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" revision="xpe-19.0" />
 
 </manifest>
