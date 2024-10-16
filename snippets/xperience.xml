@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <project path="hardware/xperience/compat" name="android_hardware_xperience_compat" remote="xpe" />
+    <project path="hardware/xperience/interfaces" name="android_hardware_xperience_interfaces" groups="pdk" remote="xpe" />
+
+    <project path="vendor/xperience" name="android_vendor_xperience" remote="xpe" />
+    <project path="vendor/xperience_themes" name="android_vendor_xperience_themes" remote="xpe" />
+    <project path="vendor/qcom/common" name="android_vendor_qcom_common" remote="xpe" clone-depth="1" />
+
+</manifest>
