@@ -109,7 +109,7 @@
     <project path="system/vold" name="android_system_vold" groups="pdk" remote="xpe" />
 
     <!-- Vendor -->
-    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="vauxite-legacy" />
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa-legacy" />
     <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" revision="xpe-19.0" />
     <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" revision="xpe-19.0" />
     <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" revision="xpe-19.0" />
