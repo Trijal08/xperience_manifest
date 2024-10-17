@@ -42,6 +42,7 @@
     <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="xpe" />
     <remove-project name="platform/external/gptfdisk" />
     <project path="external/gptfdisk" name="android_external_gptfdisk" remote="xpe" />
+    <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="vos" />
     <remove-project name="platform/external/e2fsprogs" />
     <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="xpe" />
     <project path="external/json-c" name="external_json-c" remote="vos" />
@@ -100,6 +101,8 @@
     <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="vos" />
 
     <!-- Packages -->
+    <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="vos" />
+    <remove-project name="platform/packages/modules/Uwb" />
     <remove-project name="platform/packages/modules/NetworkStack" />
     <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <remove-project name="platform/packages/modules/Permission" />
@@ -115,6 +118,10 @@
     <remove-project name="platform/packages/services/Telecomm" />
     <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
 
+    <!-- Prebuilts -->
+    <project path="prebuilts/clang/host/linux-x86/clang-20" name="yuki-clang" remote="bitbucket" revision="20.0.0git" clone-depth="1" />
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="xpe" clone-depth="1" revision="xpe-18.0" />
+
     <!-- System -->
     <remove-project name="platform/system/bpf" />
     <project path="system/bpf" name="system_bpf" remote="vos" />
@@ -122,11 +129,15 @@
     <project path="system/core" name="android_system_core" groups="pdk" remote="xpe" />
     <remove-project name="platform/system/extras" />
     <project path="system/extras" name="android_system_extras" groups="pdk" remote="xpe" />
+    <remove-project name="platform/system/sepolicy" />
+    <project path="system/security" name="android_system_security" groups="pdk" remote="xpe" />
+    <remove-project name="platform/system/sepolicy" />
+    <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="xpe" />
     <remove-project name="platform/system/vold" />
     <project path="system/vold" name="android_system_vold" groups="pdk" remote="xpe" />
 
-
     <!-- Vendor -->
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="vauxite-legacy" />
     <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" revision="xpe-19.0" />
     <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" revision="xpe-19.0" />
     <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" revision="xpe-19.0" />
