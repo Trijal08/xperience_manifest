@@ -102,7 +102,6 @@
 
     <!-- Packages -->
     <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="vos" />
-    <remove-project name="platform/packages/modules/Uwb" />
     <remove-project name="platform/packages/modules/NetworkStack" />
     <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <remove-project name="platform/packages/modules/Permission" />
