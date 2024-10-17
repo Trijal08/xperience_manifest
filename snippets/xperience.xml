@@ -119,7 +119,6 @@
 
     <!-- Prebuilts -->
     <project path="prebuilts/clang/host/linux-x86/clang-20" name="yuki-clang" remote="bitbucket" revision="20.0.0git" clone-depth="1" />
-    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="xpe" clone-depth="1" revision="xpe-18.0" />
 
     <!-- System -->
     <remove-project name="platform/system/bpf" />
