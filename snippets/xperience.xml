@@ -2,13 +2,10 @@
 <manifest>
 
     <!--android-->
-    <remove-project name="platform/art" />
     <project path="art" name="TheXPerienceProject/android_art" groups="pdk" remote="github" revision="xpe-19.0"/>
-    <remove-project name="platform/bionic" />
     <project path="bionic" name="android_bionic" groups="pdk" remote="xpe" />
 
     <!-- Build -->
-    <remove-project name="platform/build" />
     <project path="build/make" name="android_build" groups="pdk,sysui-studio" remote="xpe" >
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -17,14 +14,12 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-    <remove-project name="platform/build/soong" />
     <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="xpe" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
-    <remove-project name="platform/bootable/deprecated-ota" />
+
     <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" groups="pdk" remote="xpe" />
-    <remove-project name="platform/bootable/recovery" />
     <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="xpe" />
 
     <!--Device-->
@@ -38,31 +33,23 @@
     <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="vos" />
     <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="vos" />
     <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="xpe" />
-    <remove-project name="platform/external/dtc" />
     <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="xpe" />
-    <remove-project name="platform/external/gptfdisk" />
     <project path="external/gptfdisk" name="android_external_gptfdisk" remote="xpe" />
     <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="vos" />
-    <remove-project name="platform/external/e2fsprogs" />
     <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="xpe" />
     <project path="external/json-c" name="external_json-c" remote="vos" />
     <project path="external/tinycompress" name="external_tinycompress" remote="vos" />
 
     <!-- Frameworks -->
-    <remove-project name="platform/frameworks/av" />
     <project path="frameworks/av" name="android_frameworks_av" remote="xpe" />
-    <remove-project name="platform/frameworks/base" />
     <project path="frameworks/base" name="platform_frameworks_base" remote="xpe" />
-    <remove-project name="platform/frameworks/native" />
     <project path="frameworks/native" name="android_frameworks_native" remote="xpe" />
-    <remove-project name="platform/frameworks/opt/telephony" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="xpe" />
 
     <!-- Kernel -->
     <project path="kernel/configs" name="kernel_configs" remote="vos" />
 
     <!-- hardware -->
-    <remove-project name="platform/hardware/interfaces" />
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="xpe" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="xpe" />
     <project path="hardware/xperience/compat" name="TheXPerienceProject/android_hardware_xperience_compat" remote="github" revision="xpe-19.0" />
@@ -102,36 +89,23 @@
 
     <!-- Packages -->
     <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="vos" />
-    <remove-project name="platform/packages/modules/NetworkStack" />
     <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/modules/Permission" />
     <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/modules/Uwb" />
     <project path="packages/modules/Uwb" name="android_packages_modules_Uwb" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/modules/Wifi" />
     <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/providers/TelephonyProvider" />
     <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/services/Telephony" />
     <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
-    <remove-project name="platform/packages/services/Telecomm" />
     <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
 
     <!-- Prebuilts -->
     <project path="prebuilts/clang/host/linux-x86/clang-20" name="yuki-clang" remote="bitbucket" revision="20.0.0git" clone-depth="1" />
 
     <!-- System -->
-    <remove-project name="platform/system/bpf" />
     <project path="system/bpf" name="system_bpf" remote="vos" />
-    <remove-project name="platform/system/core" />
     <project path="system/core" name="android_system_core" groups="pdk" remote="xpe" />
-    <remove-project name="platform/system/extras" />
     <project path="system/extras" name="android_system_extras" groups="pdk" remote="xpe" />
-    <remove-project name="platform/system/security" />
     <project path="system/security" name="android_system_security" groups="pdk" remote="xpe" />
-    <remove-project name="platform/system/sepolicy" />
     <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="xpe" />
-    <remove-project name="platform/system/vold" />
     <project path="system/vold" name="android_system_vold" groups="pdk" remote="xpe" />
 
     <!-- Vendor -->
