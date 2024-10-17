@@ -98,7 +98,7 @@
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
     </project>
     <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="vos" />
-    <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="vos" />
+    <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="xpe" revision="xpe-19.0-caf" />
 
     <!-- Packages -->
     <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="vos" />
