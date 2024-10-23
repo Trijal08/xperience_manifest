@@ -18,6 +18,7 @@
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
+
     <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" groups="pdk" remote="xpe" />
     <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="xpe" />
 
@@ -33,6 +34,7 @@
     <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="vos" />
     <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="xpe" />
     <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="xpe" />
+
     <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="xpe" />
     <project path="external/fastrpc" name="TheXPerienceProject/android_external_fastrpc" groups="pdk" remote="github" revision="xpe-19.0" />
     <project path="external/GmsCompatConfig" name="external_GmsCompatConfig" remote="vos" />
@@ -48,11 +50,7 @@
     <project path="frameworks/native" name="android_frameworks_native" remote="xpe" />
     <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="xpe" />
 
-    <!-- Kernel -->
-    <project path="kernel/configs" name="kernel_configs" remote="vos" />
-
     <!-- hardware -->
-    <remove-project name="platform/hardware/interfaces" />
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="xpe" />
     <project path="hardware/libhardware" name="android_hardware_libhardware" remote="xpe" />
     <project path="hardware/xperience/compat" name="TheXPerienceProject/android_hardware_xperience_compat" remote="github" revision="xpe-19.0" />
@@ -88,7 +86,10 @@
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
     </project>
     <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="vos" />
-    <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="vos" />
+    <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="xpe" revision="xpe-19.0-caf" />
+
+    <!-- Kernel -->
+    <project path="kernel/configs" name="kernel_configs" remote="vos" />
 
     <!--libcore-->
     <project path="libcore" name="android_libcore" groups="pdk" remote="xpe" />
@@ -99,9 +100,9 @@
     <project path="packages/apps/RainbowUnicorn" name="TheXPerienceProject/android_packages_apps_RainbowUnicorn" groups="pdk" remote="github" revision="xpe-19.0" />
     <project path="packages/apps/Settings" name="TheXPerienceProject/android_packages_apps_Settings" groups="pdk" remote="github" revision="xpe-19.0" />
     <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" groups="pdk" remote="xpe" />
-    <project path="packages/modules/connectivity" name="android_packages_modules_connectivity" groups="pdk" remote="xpe" />
-    <project path="packages/modules/ConfigInfrastructure" name="android_packages_modules_ConfigInfrastructure" groups="pdk" remote="xpe" />
-    <project path="packages/modules/common" name="android_packages_modules_common" remote="xpe" />
+    <project path="packages/modules/Connectivity" name="android_packages_modules_connectivity" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
+    <project path="packages/modules/ConfigInfrastructure" name="android_packages_modules_ConfigInfrastructure" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
+    <project path="packages/modules/common" name="android_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <project path="packages/modules/HealthFitness" name="android_packages_modules_HealthFitness" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <project path="packages/modules/NetworkStack" name="android_packages_modules_NetworkStack" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
@@ -112,14 +113,19 @@
     <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
     <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="xpe" />
 
+    <!-- Prebuilts -->
+    <project path="prebuilts/clang/host/linux-x86/clang-20" name="yuki-clang" remote="bitbucket" revision="20.0.0git" clone-depth="1" />
+
     <!-- System -->
     <project path="system/bpf" name="system_bpf" remote="vos" />
     <project path="system/core" name="android_system_core" groups="pdk" remote="xpe" />
     <project path="system/extras" name="android_system_extras" groups="pdk" remote="xpe" />
+    <project path="system/security" name="android_system_security" groups="pdk" remote="xpe" />
+    <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="xpe" />
     <project path="system/vold" name="android_system_vold" groups="pdk" remote="xpe" />
 
-
     <!-- Vendor -->
+    <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa-legacy" />
     <project path="vendor/xperience" name="TheXPerienceProject/android_vendor_xperience" remote="github" revision="xpe-19.0" />
     <project path="vendor/xperience_themes" name="TheXPerienceProject/android_vendor_xperience_themes" remote="github" revision="xpe-19.0" />
     <project path="vendor/qcom/common" name="TheXPerienceProject/android_vendor_qcom_common" remote="github" clone-depth="1" revision="xpe-19.0" />

@@ -106,7 +106,15 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/telephony" />
 
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/modules-utils" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+
   <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware"/>
   <remove-project name="platform/hardware/qcom/wlan"/>
 
@@ -134,6 +142,31 @@
   <remove-project name="platform/system/bpf" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
+  <remove-project name="platform/system/vold" />
+
+  <remove-project name="platform/libcore" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/modules/ConfigInfrastructure" />
+  <remove-project name="platform/packages/modules/common" />
+  <remove-project name="platform/packages/modules/HealthFitness" />
+  <remove-project name="platform/packages/modules/NetworkStack" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <remove-project name="platform/packages/modules/RemoteKeyProvisioning" />
+  <remove-project name="platform/packages/modules/Uwb" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/services/Telecomm" />
+
+  <!-- System -->
+  <remove-project name="platform/system/bpf" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
+  <remove-project name="platform/system/security" />
+  <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
 
 </manifest>
