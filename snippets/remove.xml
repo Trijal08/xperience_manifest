@@ -113,7 +113,6 @@
 
   <!-- Kernel -->
   <remove-project name="kernel/configs" />
-  <remove-project name="platform/libcore" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Launcher3" />
