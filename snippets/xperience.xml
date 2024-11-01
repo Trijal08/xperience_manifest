@@ -25,6 +25,7 @@
     <!--Device-->
     <project path="device/qcom/sepolicy" name="TheXPerienceProject/android_device_qcom_sepolicy" groups="qcom,qssi" remote="github" revision="xpe-19.0" />
     <project path="device/qcom/sepolicy-legacy" name="TheXPerienceProject/android_device_qcom_sepolicy" groups="qcom,sdm660" remote="github" revision="xpe-17.0-caf-legacy" />
+    <project path="device/qcom/sepolicy_vndr/sm8650" name="yaap/device_qcom_sepolicy_vndr_sm8650" remote="github" revision="fifteen" />
     <project path="device/xperience/common" name="TheXPerienceProject/android_device_xperience_common" remote="github"  revision="xpe-19.0" />
     <project path="device/xperience/sepolicy" name="TheXPerienceProject/android_device_xperience_sepolicy" remote="github" revision="xpe-19.0" />
 
@@ -82,7 +83,18 @@
         <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
         <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
         <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+        <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+        <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+        <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
     </project>
+    <project path="hardware/qcom-caf/sm8650/audio/agm" name="yaap/vendor_qcom_opensource_agm-sm8650" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/audio/pal" name="yaap/vendor_qcom_opensource_arpal-lx-sm8650" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="yaap/hardware_qcom_audio-ar-sm8650" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/dataipa" name="yaap/vendor_qcom_opensource_dataipa-sm8650" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="yaap/vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/display" name="yaap/hardware_qcom-caf_sm8650_display" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/sm8650/media" name="yaap/hardware_qcom-caf_sm8650_media" remote="github" revision="fifteen" />
+    <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,lanai-vendor"  remote="xpe" revision="xpe-19.0-caf" />
     <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="vos" />
     <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="xpe" revision="xpe-19.0-caf" />
 
@@ -90,8 +102,10 @@
     <project path="kernel/configs" name="kernel_configs" remote="vos" />
 
     <!-- Packages -->
+    <project sync-s="true" path="packages/apps/OpenEUICC" name="yaap/packages_apps_OpenEUICC" remote="github" revision="fifteen" />
     <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk" remote="xpe" />
     <project path="packages/apps/RainbowUnicorn" name="TheXPerienceProject/android_packages_apps_RainbowUnicorn" groups="pdk" remote="github" revision="xpe-19.0" />
+    <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
     <project path="packages/apps/Settings" name="TheXPerienceProject/android_packages_apps_Settings" groups="pdk" remote="github" revision="xpe-19.0" />
     <project path="packages/apps/SimpleDeviceConfig" name="yaap/packages_apps_SimpleDeviceConfig" remote="github" revision="fifteen" />
     <project path="packages/apps/ThemePicker" name="TheXPerienceProject/android_packages_apps_ThemePicker" groups="pdk" remote="github" revision="xpe-19.0" />
@@ -107,6 +121,8 @@
 
     <!-- Prebuilts -->
     <project path="prebuilts/clang/host/linux-x86/clang-20" name="yuki-clang" remote="bitbucket" revision="20.0.0git" clone-depth="1" />
+    <project path="prebuilts/openeuicc-deps" name="yaap/prebuilts_openeuicc-deps" remote="github" revision="fifteen" />
+    <project path="toolchain/pgo-profiles" name="yaap/toolchain_pgo-profiles" remote="github" revision="fifteen" />
 
     <!-- System -->
     <project path="system/bpf" name="system_bpf" remote="vos" />
