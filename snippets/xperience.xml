@@ -94,7 +94,7 @@
     <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="yaap/vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="github" revision="fifteen" />
     <project path="hardware/qcom-caf/sm8650/display" name="yaap/hardware_qcom-caf_sm8650_display" remote="github" revision="fifteen" />
     <project path="hardware/qcom-caf/sm8650/media" name="yaap/hardware_qcom-caf_sm8650_media" remote="github" revision="fifteen" />
-    <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,lanai-vendor"  remote="xpe" revision="xpe-19.0-caf" />
+    <project path="hardware/qcom-caf/thermal" name="TheXPerienceProject/android_hardware_qcom_thermal" groups="qcom,lanai-vendor"  remote="github" revision="xpe-19.0-caf" />
     <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="vos" />
     <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="xpe" revision="xpe-19.0-caf" />
 
@@ -104,7 +104,7 @@
     <!-- Packages -->
     <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk" remote="xpe" />
     <project sync-s="true" path="packages/apps/OpenEUICC" name="yaap/packages_apps_OpenEUICC" remote="github" revision="fifteen" />
-    <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="github" revision="xpe-19.0" />
+    <project path="packages/apps/ParanoidSense" name="TheXPerienceProject/android_packages_apps_ParanoidSense" remote="github" revision="xpe-19.0" />
     <project path="packages/apps/RainbowUnicorn" name="TheXPerienceProject/android_packages_apps_RainbowUnicorn" groups="pdk" remote="github" revision="xpe-19.0" />
     <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
     <project path="packages/apps/Settings" name="TheXPerienceProject/android_packages_apps_Settings" groups="pdk" remote="github" revision="xpe-19.0" />
