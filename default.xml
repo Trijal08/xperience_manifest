@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-15.0.0_r1"
+  <default revision="refs/tags/android-15.0.0_r5"
            remote="aosp"
            sync-j="4" />
 
@@ -30,11 +30,11 @@
           fetch="https://github.com/AOSPA/"
           revision="refs/heads/vauxite" />
 
-  <remote  name="vos"
+  <remote name="vos"
           revision="15"
           fetch="https://github.com/VoltageOS-staging" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r1"/>
+  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r5"/>
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- BEGIN open-source projects -->
