@@ -19,7 +19,7 @@
           fetch="https://bitbucket.org/thexperienceproject" />
 
   <remote name="xpe"
-          fetch="https://github.com/TheXPerienceProject-staging/"
+          fetch="https://github.com/TheXPerienceProject"
           revision="refs/heads/xpe-19.0" />
 
   <remote name="aospa-legacy"
