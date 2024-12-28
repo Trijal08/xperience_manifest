@@ -22,6 +22,10 @@
           fetch="https://github.com/TheXPerienceProject"
           revision="refs/heads/xpe-19.0" />
 
+  <remote name="xpe-staging"
+          fetch="https://github.com/TheXPerienceProject-Staging"
+          revision="refs/heads/xpe-19.0" />
+
   <remote name="aospa-legacy"
           fetch="https://github.com/AOSPA/"
           revision="refs/heads/vauxite-legacy" />
